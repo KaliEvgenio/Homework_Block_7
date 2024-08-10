@@ -6,6 +6,7 @@ def custom_write(f_name,strings):
         ret_dict[(num,file.tell())]=x
         num+=1
         file.write(x+'\n')
+    file.close()    
     return ret_dict
 
 info = [
